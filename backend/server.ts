@@ -18,7 +18,7 @@ const UserSchema: Schema = new Schema({
 const User = mongoose.model<IUser>('User', UserSchema);
 
 // Connettersi a MongoDB
-const mongoUrl: string = 'mongodb://localhost:27017/teachers'; // Cambia con il nome del tuo database
+const mongoUrl: string = 'mongodb://localhost:27017/School'; // Cambia con il nome del tuo database
 
 mongoose.connect(mongoUrl)
   .then(() => {
